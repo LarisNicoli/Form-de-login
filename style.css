@@ -1,0 +1,529 @@
+* {
+    margin: 0;
+}
+
+/*caixa formulario e img*/
+.container {
+    height: 100vh;
+
+    background: #191816;
+}
+
+.img-logo {
+    margin: 40px 0 0 20px;
+}
+
+/*caixa formulário*/
+.container-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.header {
+    display: flex;
+    gap: 5px;
+}
+
+/*texto de login*/
+.login-text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    color: #D4CCB6;
+}
+
+.info-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #AFB6C2;
+}
+
+/*caixa email e senha*/
+.form-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 27px;
+}
+
+/*caixa email input e label*/
+.form-email {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.box-input {
+    padding: 5px 5px 5px 0px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    background: none;
+    border: 0;
+    flex-grow: 1;
+
+}
+
+.label-register {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+
+    color: #AFB6C2;
+}
+
+.email-input {
+    display: flex;
+    border: 1px solid #868686;
+    border-radius: 4px;
+}
+
+.img-email {
+    margin: 12px;
+}
+
+.email-focus {
+    background-image: url(./images/mail-focus.svg);
+    background-repeat: no-repeat;
+    margin: 12px;
+}
+
+/*caixa senha input e label*/
+.form-password {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #AFB6C2;
+}
+
+.password-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #868686;
+    border-radius: 4px;
+}
+
+.password-img {
+    margin: 12px;
+}
+
+/*caixa Lembrar-me e esqueci a senha*/
+.remember-texts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkbox {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    color: #AFB6C2;
+}
+
+.remember-checkbox {
+    font-family: 'Roboto';
+    font-style: normal;
+}
+
+
+.dialog-button {
+    background: none;
+    border: 0;
+}
+
+/*botão*/
+.form-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.button {
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 4px;
+    border: 0;
+
+    background: #FFC632;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+
+    color: #473404;
+}
+
+/*dialog*/
+.pass-Dialog {
+    margin: 25% 5%;
+    height: 50%;
+    border-radius: 10px;
+    width: 80%;
+
+    background: #24221F;
+}
+
+.recover-text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #FFC632
+}
+
+.pass-Dialog-boxBtn {
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.pass-Dialog-btn {
+    width: 25%;
+
+    background: #FFC632;
+    border: 1px solid #24221F;
+    border-bottom: solid;
+    border-radius: 10px;
+}
+
+/*dialog recuperar senha*/
+.form-pass-Dialog {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.pass-Dialog-text {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    color: #D4CCB6;
+    flex-grow: 1;
+}
+
+.pass-Dialog-subtext {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color: #AFB6C2;
+}
+
+.pass-Dialog-email {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+.pass-Dialog-boxInput {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.pass-Dialog-label {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #AFB6C2;
+}
+
+/*tela grande - responsivo*/
+@media (min-width: 768px) {
+    .container {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        background: #191816;
+    }
+
+    .img-logo {
+        position: absolute;
+        width: 115px;
+        height: 28px;
+        left: 40px;
+        top: 40px;
+    }
+
+    .content-img {
+        width: 50%;
+        height: 100%;
+        background-image: url("./images/side-image.jpg");
+        background-position: 0%;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+
+    /*caixa formulário*/
+    .container-form {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        height: 60%;
+
+    }
+
+    .header {
+        display: flex;
+        gap: 5px;
+    }
+
+    /*texto de login*/
+    .login-text {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        color: #D4CCB6;
+    }
+
+    .info-text {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        color: #AFB6C2;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 50%;
+
+        background: #24221F;
+        border-radius: 4px;
+    }
+
+    /*caixa email e senha*/
+    .form-box {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 27px;
+        width: 80%;
+        height: 60%;
+    }
+
+    /*caixa email input e label*/
+    .form-email {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+    }
+
+    .box-input {
+        padding: 5px 5px 5px 0px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        background: none;
+        border: 0;
+        flex-grow: 1;
+
+    }
+
+    .label-register {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+
+        color: #AFB6C2;
+    }
+
+    .email-input {
+        display: flex;
+        border: 1px solid #868686;
+        border-radius: 4px;
+    }
+
+
+    .img-email {
+        margin: 12px;
+    }
+
+    /*caixa senha input e label*/
+    .form-password {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        color: #AFB6C2;
+    }
+
+    .password-input {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid #868686;
+        border-radius: 4px;
+    }
+
+    .password-img {
+        margin: 12px;
+    }
+
+
+    /*caixa Lembrar-me e esqueci a senha*/
+    .remember-texts {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .checkbox {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        color: #AFB6C2;
+    }
+
+    .remember-checkbox {
+        font-family: 'Roboto';
+        font-style: normal;
+    }
+
+
+    .dialog-button {
+        background: none;
+        border: 0;
+    }
+
+    /*botão*/
+    .form-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .button {
+        height: 50px;
+        width: 100%;
+        margin-top: 20px;
+        border-radius: 4px;
+        border: 0;
+
+        background: #FFC632;
+
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+
+        color: #473404;
+    }
+
+    /*dialog*/
+    .pass-Dialog {
+
+
+        margin: 10% 4%;
+        height: 50%;
+        border-radius: 10px;
+        width: 40%;
+
+        background: #24221F;
+    }
+
+    .recover-text {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        color: #FFC632
+    }
+
+    .pass-Dialog-boxBtn {
+        flex-grow: 0;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        height: 25%;
+    }
+
+    .pass-Dialog-btn {
+        width: 25%;
+
+        background: #FFC632;
+        border: 1px solid #24221F;
+        border-bottom: solid;
+        border-radius: 10px;
+    }
+
+    /*dialog recuperar senha*/
+    .form-pass-Dialog {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .pass-Dialog-text {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        text-align: center;
+        color: #D4CCB6;
+        flex-grow: 1;
+    }
+
+    .pass-Dialog-subtext {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        color: #AFB6C2;
+    }
+
+    .pass-Dialog-email {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-grow: 1;
+    }
+
+    .pass-Dialog-boxInput {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .pass-Dialog-label {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        color: #AFB6C2;
+    }
+}

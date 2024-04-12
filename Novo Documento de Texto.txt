@@ -1,0 +1,52 @@
+* logo
+       -dar espaçamento do body
+
+* header
+       -dar espaçamento da logo OK
+       -dar espaçamento da img-login OK
+       -fonte e tamanho das letras OK
+
+* form
+       -dar espaçamento do  header OK
+       -dar espaçamento da label OK
+       -fonte e tamanho das letras label OK
+       -tamanho do input email/password OK
+
+*inputs
+       -fonte e tamanho placeholder do input email/password OK
+       -imagens no input normal do input email/password OK
+       -imagens no input focus do input email/password
+       -alterar as imagens de normal para focus quando clicar
+
+*checkbox
+       -fonte e tamanho label/a OK
+       -alterar cor de label para #FFC632 quando clicar 
+       -alinhar checkbox e textos OK
+
+*button
+       -alterar width e height OK
+       -alterarcor para #FFC632 OK
+       -acrescentar texto enviar OK
+       -ser clicavel
+
+*a 
+       -ser clicavel
+       -abrir modal de registro
+
+*modal - registar-se OK
+       -abrir modal de registro OK
+       -email OK
+       -criar senha OK 
+       -button OK
+       -opção de fechar modal "x"
+              -arrumar posição da caixa
+       -mudar width e height da caixa
+       -alterar fonte para poppins
+
+*dialog - esqueci minha senha OK
+       -opção de fechar OK
+       -opção de confirmar OK
+       -arrumar posição da caixa
+       -mudar width e height da caixa
+       -alterar fonte para poppins
+       -

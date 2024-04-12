@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <img class="img-logo" src="./images/logo.svg" alt="">
+
+        <div class="container-form">
+
+            <div class="form">
+                <div class="header">
+                    <img class="img-login" src="./images/log-in.svg" alt="">
+                    <h1 class="login-text">Faça seu login</h1>
+                </div>
+                <span class="info-text">Entre com suas informações de cadastro</span>
+
+                <form class="form-box" action="">
+
+                    <div class="form-email">
+                        <label class="label-register" for="">E-mail</label>
+                        <div class="email-input">
+                            <img class="img-email" src="./images/mail.svg" alt="">
+                            <input class="box-input email-img focus-email" type="email" placeholder=" Digite seu email"
+                                minlength="20" maxlength="25">
+                        </div>
+                    </div>
+
+                    <div class="form-password">
+                        <label class="label-register" for="">Senha</label>
+                        <div id="inputPassword" class="password-input">
+                            <img class="password-img password-focus" src="./images/lock.svg" alt="">
+                            <input class="box-input" type="password" placeholder=" Digite sua senha">
+                            <img class="password-img" src="./images/eye.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="remember-texts">
+                        <div class="checkbox">
+                            <input type="checkbox" class="remember-box" id="">
+                            <label class="remember-checkbox" for="">Lembrar-me</label>
+                        </div>
+
+                        <div class="recover-password">
+                            <div>
+
+                                <button class="dialog-button" id="showDialog"><a href="#" class="recover-text">Esqueci
+                                        minha senha</a></button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="form-button">
+                        <button class="button">ENTRAR</button>
+
+                        <button id="show2Dialog" class="dialog-button">
+                            <a class="recover-text" href="##"> Não tem uma conta? <strong> Registre-se</strong></a>
+                        </button>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <div class="content-img"></div>
+    </div>
+
+
+    <dialog id="passDialog" class="pass-Dialog">
+
+        <form class="form-pass-Dialog" method="dialog">
+
+            <legend class="pass-Dialog-text">Digite seu email para recuperar senha!</legend>
+            <div class="pass-Dialog-email form-email ">
+                <div class="pass-Dialog-boxInput">
+                    <label class="pass-Dialog-label">Email de usuário</label>
+
+                    <div class="email-input">
+                        <img class="img-email" src="./images/mail.svg" alt="">
+                        <input class="box-input email-img focus-email" type="email" placeholder=" Digite seu email"
+                            minlength="20" maxlength="25">
+                    </div>
+                </div>
+
+                <span class="pass-Dialog-subtext"><strong>Verifique sua caixa de entrada</strong></span>
+            </div>
+            <div class="pass-Dialog-boxBtn"> <button class="pass-Dialog-btn">OK</button>
+                <button class="pass-Dialog-btn">Close</button>
+            </div>
+
+
+        </form>
+    </dialog>
+
+    <dialog id="registerDialog" class="pass-Dialog">
+        <form class="form-pass-Dialog" method="dialog">
+            <legend class="pass-Dialog-text">Não tem uma conta? <strong> Registre-se</strong></legend>
+
+            <div class="pass-Dialog-email form-email ">
+
+                <div class="pass-Dialog-boxInput">
+                    <label class="pass-Dialog-label">Email de usuário</label>
+
+                    <div class="email-input">
+                        <img class="img-email" src="./images/mail.svg" alt="">
+                        <input class="box-input" type="email" placeholder=" Digite seu email" minlength="20"
+                            maxlength="25">
+                    </div>
+                </div>
+            </div>
+
+            <div class="pass-Dialog-password">
+                <label class="pass-Dialog-label">Senha</label>
+                <div>
+                    <div class="password-input">
+                        <img class="password-img" src="./images/lock.svg" alt="">
+                        <input class="box-input" type="password" placeholder=" Digite sua senha">
+                        <img class="password-img" src="./images/eye.svg" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pass-Dialog-boxBtn"> <button class="pass-Dialog-btn">OK</button>
+                <button class="pass-Dialog-btn">Close</button>
+            </div>
+        </form>
+    </dialog>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
